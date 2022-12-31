@@ -16,6 +16,10 @@ select
 {
 font-size:30px;
 }
+ div
+ {
+  font-size:20px;
+ }
 </style>
 </head>
 <body>
@@ -35,8 +39,10 @@ font-size:30px;
 <option value="OCT">OCTOBER</option>
 <option value="NOV">NOVEMBER</option>
 <option value="DEC">DECEMBER</option>
+ <option value="hello">🥰💓💑</option>
 </select></center><br><br><br><br><br><br>
-<center><img  width="680" height="840" id="two"</center>
+<center><img  width="680" height="840" id="two"></center><br>
+<center><div id="three"></div></center>
 <script type="text/javascript">
 function hai()
 {
@@ -89,6 +95,10 @@ else if(x=="NOV")
 else if(x=="DEC")
 {
  document.getElementById("two").src="DEC.JPG";
+}
+ else if(x=="hello")
+{
+ document.getElementById("three").innerHTML="CALL/MSG ME ONCE";
 }
 
 }
