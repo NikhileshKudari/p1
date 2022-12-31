@@ -1,0 +1,89 @@
+<html>
+<head>
+<style>
+#six
+{
+color:red;
+font-size:20px;
+}
+form
+{
+border:3px solid #c0c0c0;
+border-radius:1px;
+text-align:center;
+margin:3px 400px 3px 400px;
+padding:30px 30px 30px 30px;
+font-size:20px;
+background-color:white;
+
+}
+
+p
+{
+clear:both;
+text-align:center;
+color:green;
+font-size:20px;
+letter-spacing:3px;
+word-spacing:3px;
+
+}
+body{
+background-color:#c0c0c0;
+}
+h1
+{
+text-align:center;
+letter-spacing:3px;
+text-decoration:underline;
+
+}
+a:hover
+{
+color:red;
+}
+
+
+</style>
+</head>
+<body>
+<h1 >W E L C O M E</h1><br>
+<form>
+USERNAME:<br><input type="text" id="one"><br><br>
+
+PASSWORD:<br><input type="password" id="two"><br><br>
+<input type="button" value="submit" onclick="at()"><br><br>
+*Note<br>
+Please use your name as USERNAME and your DOB(DDMMYYYY) as PASSWORD
+</form>
+<br><br>
+<p id="three"></p><br>
+<a href="" target="blank"><center><img  "width="50" height="50" id="five"></center></a><br>
+<marquee id="six" scrollamount="1"></marquee><br><br>
+<center><a href="" target="blank" id="seven"></a></center>
+
+<script type="text/javascript">
+function at()
+{
+var x=document.getElementById("one").value;
+var y=document.getElementById("two").value;
+if(x=="siddiqparveen" && y==181002)
+{
+document.getElementById("three").innerHTML="AUTHENTICATION SUCCESSFULL<br><br><b>You are verified as NIKHILESH</b>";
+document.getElementById("five").src="";
+document.getElementById("six").innerHTML="Hello MAM we verified that you are CUTE SIDDIQ and slow ga scroll avthundi ani worry avvaku kinda click cheyi muskoni";
+document.getElementById("seven").innerHTML="click here";
+
+}
+else
+{
+document.getElementById("three").innerHTML="AUTHENTICATION  NOT SUCCESSFULL<br><br><b>You are not verified as SIDDIQ";
+}
+
+}
+</script>
+
+</body>
+
+
+</html>
